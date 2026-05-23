@@ -56,9 +56,9 @@ g++ -std=c++11 EraseComments.cpp -o EraseComments
   - **Cross-Platform Compatibility:** When loading the keyword dictionary, the program safely strips potential trailing carriage returns, ensuring the tool functions correctly regardless of whether the text files were created on Windows or Linux/macOS.
 - **Compilation:**
 ```shell
-# Compile the source code into an executable named    'KeywordsCounting'
-g++ -std=c++11 KeywordsCounting.cpp -o   KeywordsCounting   
-# Run the tool, passing the dictionary, target text,   and output file path
+# Compile the source code into an executable named 'KeywordsCounting'
+g++ -std=c++11 KeywordsCounting.cpp -o KeywordsCounting   
+# Run the tool, passing the dictionary, target text, and output file path
 ./KeywordsCounting Keywords.txt Text2search.txt Result.txt
 ```
 
