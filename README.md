@@ -41,7 +41,7 @@ Intro-To-Programming-Basic-CPP-Projects/
   - **Edge-Case Resilience:** The parsing logic safely handles escape characters (`\"` and `\\`), ensuring that strings like `"This is not a /* comment */"` are preserved entirely.
 - **Compilation:**
 ```shell
-# Compile the source code into an executable name 'EraseComments'
+# Compile the source code into an executable named 'EraseComments'
 g++ -std=c++11 EraseComments.cpp -o EraseComments
 
 # Run the tool, passing the test file as input an defining an output file
