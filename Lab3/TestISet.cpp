@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------
 //
-// TestISet.cpp : Test program for Lab11. 
+// TestISet.cpp : Test program for Lab3. 
 // Dec,12,2024
 //
 //----------------------------------------------------------------------
@@ -57,7 +57,7 @@ try
 
     cout << "Union of two integer sets s1 and s2: " << endl;
     s1.print();     // display set
-    cout << " ¡È ";
+    cout << " Â¡Ãˆ ";
     s2.print();    // display set
     cout << " = ";
     iSet r1{s1.setUnion(s2)};   // compute union of two integer sets
@@ -69,7 +69,7 @@ try
 
     cout << "Intersection of two integer sets s1 and s2: " << endl;
     s1.print();
-    cout << " ¡É ";
+    cout << " Â¡Ã‰ ";
     s2.print();
     cout << " = ";
     iSet r2{s1.setIntersection(s2)};  // compute intersection of two integer sets
@@ -81,7 +81,7 @@ try
 
     cout << "Difference of two integer sets s1 and s2: " << endl;
     s1.print();
-    cout << " £­ ";
+    cout << " Â£Â­ ";
     s2.print();
     cout << " = ";
     iSet r3{s1.setDifference(s2)};     // compute difference of two integer sets
@@ -91,7 +91,7 @@ try
 
     cout << "Difference of two integer sets s2 and s1: " << endl;
     s2.print();
-    cout << " £­ ";
+    cout << " Â£Â­ ";
     s1.print();
     cout << " = ";
     iSet r4{s2.setDifference(s1)};     // compute difference of two integer sets
@@ -103,7 +103,7 @@ try
 
     cout << "Symmetric difference of two integer sets s1 and s2: " << endl;
     s1.print();
-    cout << " symmetric£­ ";
+    cout << " symmetricÂ£Â­ ";
     s2.print();
     cout << " = ";
     iSet r5{s1.setSymmetricDifference(s2)};   // compute symmetric difference of two integer sets
