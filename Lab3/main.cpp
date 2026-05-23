@@ -1,44 +1,45 @@
-#pragma once
-#include<iostream>
-class iSet
+#include <iostream>
+#include "iSet.h"
+
+using namespace std;
+
+int main()
 {
-private:
-    int * ptr;
-    int capability;
-    int element;
-    void uni_sort();
+    cout << "=== Testing iSet (Set Operations) ===" << endl;
 
+    iSet setA(20);
+    iSet setB(20);
 
-public:
-    struct bad_iSet
-    {
-        int errnum;
-    };
-    iSet(int);
-    iSet(const iSet &);
-    ~iSet();
-//基本要求
-    int size()const;
-    int capacity()const;
-    void print()const;
-    void insert(int);
+    // Initialize Set A = {1, 2, 3, 4, 5}
+    for (int i = 1; i <= 5; i++)
+        setA.insert(i);
 
-    void erase(int);
-    void clear();
+    // Initialize Set B = {4, 5, 6, 7, 8}
+    for (int i = 4; i <= 8; i++)
+        setB.insert(i);
 
-    bool isEmpty()const;
-    bool isFull()const;
-    bool contains(int)const;
-    bool isSubset(iSet&)const;
+    cout << "Set A: ";
+    setA.print();
+    cout << "Set B: ";
+    setB.print();
 
-//注意用引用减少内存开销
-    iSet setUnion(iSet&)const;
-    iSet setIntsection(iSet&)const;
-    iSet setDifference(iSet&)const;
-    iSet setSymmetricDifference(iSet&)const;
+    cout << "\n--- Operations ---" << endl;
 
-//补充
-    iSet& operator=(const iSet&);
-    int find(int,int,int)const;
+    iSet uSet = setA.setUnion(setB);
+    cout << "Union (A U B): ";
+    uSet.print();
 
-};
+    iSet iSet_res = setA.setIntersection(setB);
+    cout << "Intersection (A * B): ";
+    iSet_res.print();
+
+    iSet dSet = setA.setDifference(setB);
+    cout << "Difference (A - B): ";
+    dSet.print();
+
+    iSet symSet = setA.setSymmetricDifference(setB);
+    cout << "Symmetric Difference: ";
+    symSet.print();
+
+    return 0;
+}
