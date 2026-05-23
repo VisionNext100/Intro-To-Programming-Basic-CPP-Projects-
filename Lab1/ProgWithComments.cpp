@@ -1,4 +1,4 @@
-//This is a Test Input File for Lab9
+//This is a Test Input File for Lab1
 //Nov. 28, 2024
 
 /*******************************************************************
