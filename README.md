@@ -4,7 +4,7 @@
 ### Ⅰ Overview
 This is a comprehensive collection of C++ projects covering comment removal, keywords counting, set operations, large number calculation, and heterogeneous queue. It serves as an excellent practical groundwork for C++ beginners to systematically solidify their understanding of core programming concepts, memory management, and object-oriented design. The specific task requirements for each of the five laboratory assignments are outlined in Part Ⅲ of this document, while this repository directly houses the fully implemented source code solutions and comprehensive test cases for verification.
 
-### Ⅱ Architecture
+### Ⅱ Project Structure
 ```
 Intro-To-Programming-Basic-CPP-Projects/
 ├── README.md
